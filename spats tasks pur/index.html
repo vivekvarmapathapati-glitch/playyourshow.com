@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Playyourshow.com
+        </title>
+        <style>
+            .nav-bar{
+                background-color: #0f172a;
+                width: 100%;
+            }
+
+            .web-logo{
+                margin-left: 50px;
+                font-weight: 600;
+                font-size: xx-large;
+                color: white;
+            }
+            .nav-bar-options{
+               margin-top: 14px;
+               color: rgb(250, 224, 224);
+               font-size: 18px;
+            }
+            .nav-bar-options button{
+                background-color: rgb(233, 0, 0);
+                color : rgb(6, 3, 3);
+                border: none;
+                margin-left: 30px;
+                border-radius: 10px;
+                font-size: medium;
+                font-family: 'Poppins', sans-serif;
+            }
+            .search-bar{
+                height: 18px;
+                width: 250px;
+                max-width: 100%;
+                margin-top: 14px;
+                border-radius: 7px;
+                border: black 3px;
+                box-shadow: 0cap;
+                background-color: rgb(79, 77, 77);
+
+            }
+            .search-bar:hover{
+                transform: scale(1.04);
+               box-shadow: 0 0 10px red;
+               border-color: red;
+            }
+            .demo-pic{
+                width: 350px;
+              
+                margin-top: 10px;
+                margin-left: 35px;
+                border-radius: 20px;
+                display: inline-block;
+            }
+            .prebooking-img:hover,
+            .demo-pic:hover{
+                transform: scale(1.02);
+                transition: transform 0.2s ease;
+            }
+            .prebook-now{
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                background-color: rgb(204, 59, 59);
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 200px;
+                height: 20px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .book-now{
+                position: absolute;
+                top: 80%;
+                left: 80%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                background-color: rgb(204, 59, 59);
+                border: none;                        
+                border-radius: 10px;
+                cursor: pointer;
+                width: 70px;
+                height: 20px;
+                text-align: center;
+                text-decoration: none;
+
+            }
+            .prebook-now:hover,
+            .book-now:hover{
+                transform: translate(-50%,-50%) scale(1.1);
+                transition: transform 0.2s ease;
+                color: red;
+                background-color: white;
+                box-shadow: 0 0 10px red;
+               border-color: red;
+            }
+            .image-box-2,
+            .image-box-1,
+            .image-box{
+            position: relative;
+            width: fit-content;
+            display: inline-block;
+}
+            .link-book{
+                color: rgb(233, 226, 226);
+                text-decoration: none;
+            }
+            
+            
+            .title-1{
+                margin-top: 10px;
+                margin-left: 35px;
+                text-decoration: underline;
+            }
+            .prebooking-img{
+                width: 450px;
+                border: none;
+                border-radius: 20px;
+                margin-left: 15px;
+            }
+            .image-2{
+                
+                width: 350px;
+                margin-left: 15px;
+                border-radius: 10px;    
+            }
+            
+            
+            .image-2:hover{
+                transform: scale(1.05);
+                
+            }
+            .image-row{
+                display: flex;
+                align-items: center;
+            }
+            .divider-line{
+                margin-bottom: 0px;
+            }
+            .suggestion{
+                margin-left: 25px;
+                text-decoration: underline;
+                color: rgb(216, 152, 152);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .sugg-img-box{
+                display: flex;
+                align-items: center;
+                background-color: rgb(42, 38, 38);
+                border-radius: 30px;
+                height: 300px;
+                
+            }
+            .sugg-img-1,
+            .sugg-img-2,
+            .sugg-img-3{
+                width: 200px;
+                margin-left: 15px;
+                border-radius: 20px;
+               
+            }
+            .sugg-img-1:hover,
+            .sugg-img-2:hover,
+            .sugg-img-3:hover{
+                transform: scale(1.05);
+                cursor:pointer;
+            }
+            .offer-img{
+                width: 500px;
+                margin-left: 50px;
+                border-radius: 30px;
+            }
+            .offer-img:hover{
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            .login-button:hover{
+                transform: scale(1.06);
+                color: red;
+                background-color: black;
+                box-shadow: 0 0 10px red;
+               border-color: red;
+                
+            }
+            .page-lable{
+                background-color: black;
+            }
+            .colouring-0{
+                color: #10b981;
+            }
+            .colouring-1{
+                color: rgb(209, 209, 44);
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="page-lable">
+            <nav class="nav-bar">
+            <div style="
+            display: flex;
+            gap: 40px;
+            "
+            >
+        <div class="web-logo">
+            P<a class="colouring-0">▷</a>AY|<a class="colouring-1">YOURSHOW</a>
+        </div>
+            <div class="serch-bar1"><input class="search-bar" type="text" placeholder="Search for Movies"></div>
+           
+            <div class="nav-bar-options">
+                <div style="
+                    display: flex;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    gap: 20px;">
+                    <div>
+                        Movies
+                    </div>
+                    <div>
+                        ListYourShows
+                    </div>
+                    
+                    <div>
+                        Activities
+                    </div>
+                    <div>
+                        Store Credit
+                    </div>
+                    <div >
+                        <button class="login-button">
+                        𝓛𝓸𝓰𝓲𝓷
+
+                    </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </nav>
+        <div class="title-1">ℕ𝕠. 𝟙 𝕆ℕ 𝕋ℝ𝔼ℕ𝔻𝕀ℕ𝔾</div>
+        <div class="image-row">
+            <div class="image-box">
+            <img class="demo-pic" src="salaar-part-1-ceasefire-2023-M5DxkV.jpg">
+            <div class="test-1">
+                
+                    <a class="book-now" href="./seatselectionpage.html">ʙᴏᴏᴋ ɴᴏᴡ</a>
+                 
+            </div>
+
+        </div>
+        <div class="image-box-1">
+            <img class="prebooking-img" src="prebooking.png">
+            <div class="test-2">
+                
+                    <a class="prebook-now" href="https://www.google.com">PRE BOOK YOU FAV SHOW</a>
+                 
+            </div>
+
+        </div>
+        <div class="image-box-2">
+            <img class="image-2" src="1119553.jpg">
+            <div class="test-1">
+                
+                    <a class="book-now" href="./seatselectionpage.html">ʙᴏᴏᴋ ɴᴏᴡ</a>
+                 
+            </div>
+        </div>
+        
+        </div>
+        <p class="suggestion">
+            <strong>SUGGESTED FOR YOU</strong> 
+        </p>
+        <div class="sugg-img-box">
+            <img class="sugg-img-1" src="Spirit-poster.jpg">
+            <img class="sugg-img-2" src="61OmlO9stnL.jpg">
+            <img class="sugg-img-3" src="major-indian-movie-poster.webp">
+            <img class="offer-img" src="Screenshot 2026-01-27 235351.png">
+        </div>
+        </div>
+    </body>
+</html>
